@@ -100,7 +100,7 @@ section { position: relative; z-index: 1; padding: 5.5rem 4rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.8rem; }
 .tag { font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 0.25rem 0.65rem; border: 1px solid var(--border); color: var(--muted); text-transform: uppercase; transition: all .2s; }
 .project-card:hover .tag { border-color: rgba(0,212,255,.3); color: var(--cyan); }
-.project-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid var(--cyan); padding-bottom: 1px; }
+.project-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--cyan); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid var(--cyan); padding-bottom: 1px; margin-right: 1rem; }
 .project-link:hover { opacity: 0.75; }
 
 .accordion-item { background: var(--card); margin-bottom: 2px; }
@@ -215,6 +215,8 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
   <div class="section-label">Selected Work</div>
   <h2 class="section-title reveal">Production ML Projects</h2>
   <div class="projects-grid">
+
+    <!-- PROJECT 01 -->
     <div class="project-card reveal">
       <div class="project-num">01</div>
       <span class="project-badge">✦ Live · Azure</span>
@@ -229,6 +231,8 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
       <div class="tags"><span class="tag">PyTorch</span><span class="tag">MTCNN</span><span class="tag">FaceNet</span><span class="tag">Flask</span><span class="tag">Docker</span><span class="tag">Azure ACR</span><span class="tag">Azure App Service</span></div>
       <a href="https://facedetectionapp-bphrdkf3c7gxc6bt.uksouth-01.azurewebsites.net" target="_blank" class="project-link">Live Demo ↗</a>
     </div>
+
+    <!-- PROJECT 02 -->
     <div class="project-card reveal">
       <div class="project-num">02</div>
       <span class="project-badge">✦ Live · Streamlit</span>
@@ -243,6 +247,8 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
       <div class="tags"><span class="tag">YOLOv8</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span><span class="tag">Python</span><span class="tag">Computer Vision</span></div>
       <a href="https://lagos-traffic-object-detection-osvf4qrxij8cdbt995mwnm.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
     </div>
+
+    <!-- PROJECT 03 -->
     <div class="project-card reveal">
       <div class="project-num">03</div>
       <span class="project-badge">✦ Live · Streamlit</span>
@@ -257,62 +263,43 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
       <div class="tags"><span class="tag">PyTorch</span><span class="tag">ResNet-50</span><span class="tag">Transfer Learning</span><span class="tag">Streamlit</span><span class="tag">EuroSAT</span><span class="tag">Python</span></div>
       <a href="https://eurosat-satellite-image-classification-8oklwx4c5pgjuzaba3wd.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
     </div>
+
+    <!-- PROJECT 04 -->
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <span class="project-badge">✦ Live · Streamlit</span>
+      <h3 class="project-title">Face Enrollment &amp; Liveness Detection System</h3>
+      <p class="project-desc">A secure, production-ready face authentication system with liveness detection. Users enroll with a selfie, pass a liveness check, and are verified in real time. Built with FastAPI, Azure Face API, and Streamlit.</p>
+      <ul class="project-highlights">
+        <li>End-to-end face enrollment and verification pipeline</li>
+        <li>Liveness detection to prevent spoofing</li>
+        <li>Azure Face API for robust recognition</li>
+        <li>FastAPI backend, Streamlit demo frontend</li>
+        <li>Deployed on Streamlit Cloud, secure storage with Blob Storage</li>
+      </ul>
+      <div class="tags"><span class="tag">FastAPI</span><span class="tag">Azure Face API</span><span class="tag">Streamlit</span><span class="tag">Liveness Detection</span><span class="tag">Python</span><span class="tag">Azure</span></div>
+      <a href="https://faceenrollment-and-liveness.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
+      <a href="https://github.com/mscodes1019/faceenrollment-and-liveness.git" target="_blank" class="project-link">GitHub ↗</a>
+    </div>
+
+    <!-- PROJECT 05 -->
+    <div class="project-card reveal">
+      <div class="project-num">05</div>
+      <span class="project-badge">✦ Live · Streamlit</span>
+      <h3 class="project-title">Air Quality Forecasting Dashboard</h3>
+      <p class="project-desc">Interactive Streamlit dashboard for air-quality analysis and forecasting using ARIMA, Autoregression, and Linear Regression models. The app demonstrates data preprocessing, trend exploration, model comparison, and short-term prediction in a recruiter-friendly interface.</p>
+      <ul class="project-highlights">
+        <li>Built forecasting workflows with ARIMA, Autoregression, and Linear Regression</li>
+        <li>Cleaned and analyzed air-quality data to visualize trends and patterns</li>
+        <li>Created an interactive Streamlit app with live demo and video walkthrough</li>
+      </ul>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">ARIMA</span><span class="tag">Autoregression</span><span class="tag">Linear Regression</span><span class="tag">Streamlit</span><span class="tag">Time Series</span></div>
+      <a href="https://mscodes1019-timeseries-air-quality--streamlit-app-xhld7w.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
+      <a href="https://youtu.be/C4Un0OeufCc" target="_blank" class="project-link">Watch Demo ↗</a>
+      <a href="https://github.com/mscodes1019/Timeseries-air-quality-" target="_blank" class="project-link">GitHub ↗</a>
+    </div>
+
   </div>
-  <div class="project-card reveal">
-  <div class="project-num">04</div>
-  <span class="project-badge">✦ Live · Streamlit</span>
-  <h3 class="project-title">Face Enrollment &amp; Liveness Detection System</h3>
-  <p class="project-desc">
-    A secure, production-ready face authentication system with liveness detection. Users enroll with a selfie, pass a liveness check, and are verified in real time. Built with FastAPI, Azure Face API, and Streamlit.
-  </p>
-  <ul class="project-highlights">
-    <li>End-to-end face enrollment and verification pipeline</li>
-    <li>Liveness detection to prevent spoofing</li>
-    <li>Azure Face API for robust recognition</li>
-    <li>FastAPI backend, Streamlit demo frontend</li>
-    <li>Deployed on Streamlit Cloud, secure storage with Blob Storage</li>
-  </ul>
-  <div class="tags">
-    <span class="tag">FastAPI</span>
-    <span class="tag">Azure Face API</span>
-    <span class="tag">Streamlit</span>
-    <span class="tag">Liveness Detection</span>
-    <span class="tag">Python</span>
-    <span class="tag">Azure</span>
-  </div>
-  <a href="https://faceenrollment-and-liveness.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
-  <a href="https://github.com/mscodes1019/faceenrollment-and-liveness.git" target="_blank" class="project-link">GitHub ↗</a>
-</div>
-<div class="project-card reveal">
-  <div class="project-num">05</div>
-  <span class="project-badge">✦ Live · Streamlit</span>
-  <h3 class="project-title">Air Quality Forecasting Dashboard</h3>
-  <p class="project-desc">
-    Interactive Streamlit dashboard for air-quality analysis and forecasting using
-    ARIMA, Autoregression, and Linear Regression models. The app demonstrates
-    data preprocessing, trend exploration, model comparison, and short-term prediction
-    in a recruiter-friendly interface.
-  </p>
-  <ul class="project-highlights">
-    <li>Built forecasting workflows with ARIMA, Autoregression, and Linear Regression</li>
-    <li>Cleaned and analyzed air-quality data to visualize trends and patterns</li>
-    <li>Created an interactive Streamlit app with live demo and video walkthrough</li>
-  </ul>
-  <div class="tags">
-    <span class="tag">Python</span>
-    <span class="tag">Pandas</span>
-    <span class="tag">ARIMA</span>
-    <span class="tag">Autoregression</span>
-    <span class="tag">Linear Regression</span>
-    <span class="tag">Streamlit</span>
-    <span class="tag">Time Series</span>
-  </div>
-  <a href="https://mscodes1019-timeseries-air-quality--streamlit-app-xhld7w.streamlit.app/" target="_blank" class="project-link">Live Demo ↗</a>
-  <br><br>
-  <a href="https://youtu.be/C4Un0OeufCc" target="_blank" class="project-link">Watch Demo Video ↗</a>
-  <br><br>
-  <a href="https://github.com/mscodes1019/Timeseries-air-quality-" target="_blank" class="project-link">GitHub ↗</a>
-</div>
 </section>
 
 <section class="dark" id="experience">
@@ -482,7 +469,7 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
       </div>
     </div>
     <div class="contact-links">
-      <a href="mailto:mayinde08@gmail.com">📧 mayinde08@gmail.com</a>
+      <a href="mailto:mayinde08@gmail.com" class="contact-link">📧 mayinde08@gmail.com</a>
       <a href="tel:+2347087879239" class="contact-link">📞 +234 708 787 9239</a>
       <a href="https://www.linkedin.com/in/monsurat-ayinde-6a349a194" target="_blank" class="contact-link">🔗 linkedin.com/in/monsurat-ayinde</a>
       <a href="https://github.com/mscodes1019" target="_blank" class="contact-link">🐙 github.com/mscodes1019</a>
@@ -496,7 +483,7 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
   <span class="footer-text">Lagos, Nigeria</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('ring');
   let mx=0,my=0,rx=0,ry=0;
@@ -518,3 +505,9 @@ footer { position: relative; z-index: 1; padding: 1.5rem 4rem; border-top: 1px s
 
   const obs = new IntersectionObserver(entries=>{
     entries.forEach((e,i)=>{ if(e.isIntersecting) setTimeout(()=>e.target.classList.add('visible'), i*80); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
